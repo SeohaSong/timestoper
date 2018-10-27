@@ -16,7 +16,7 @@ async def main(loop):
             elapsed_time = curr_time-start_time
             if is_input:
                 str_ls = ['\r',  ' '*24,
-                          '(time interval)', str(curr_time-latest_time)]
+                        '(time interval)', str(curr_time-latest_time)]
                 sys.stdout.write(' '.join(str_ls))
                 is_input = False
                 latest_time = curr_time
